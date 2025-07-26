@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    line-height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8.125rem;
+    background-color: #85CDF5;
+}
+
+header a{
+    color: #333333;
+}
+
+header a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.slide{
+    background-image: url(./assets/backgroundSlide.png);
+    background-position: center;
+    background-size: 110%;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide a{
+    color: white;
+    font-size: 70px;
+}
+
+.slide p{
+    color: white;
+    font-size: 20px;
+    font-family: Darker Grotesque;
+    font-weight: lighter;
+    width: 40%;
+}
