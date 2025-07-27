@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 5px;
+    background-color: #85CDF5;
+}
+
+
+.links{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+
+}
+
+header a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 footer{
     width: 1400px;
     height: 275px;
