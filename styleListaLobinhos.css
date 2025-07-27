@@ -1,0 +1,281 @@
+div.searchBar {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+div.searchBar input {
+    width: 70%;
+    height: 3vh;
+    border: solid 1px rgb(0, 0, 0);
+    background-image: url(./assets/searchWolfs.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5vmax;
+    padding-left: 2vw;
+}
+
+div.searchBar button {
+    width:8%;
+    height: 3.5vh;
+    background-color: rgb(222,185,89);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.25rem;
+    position: relative;
+    right: 5%;
+}
+
+div.searchBar button:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+div.checkboxArea {
+    width: 87%;
+}
+
+div.checkboxArea input {
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(250,250,250);
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: relative;
+    top: 0.2vh;
+    cursor: pointer;
+}
+
+div.imgShadow {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 120px;
+    min-height: 180px;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 18.5%;
+}
+
+div.imgShadowReversed {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 120px;
+    min-height: 180px;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 33.5%;
+}
+
+div.wolfImg img {
+    position: relative;
+    top: 12%;
+    right: 24.5%;
+    width: 50%;
+    height: 80%;
+    min-width: 120px;
+    min-height: 180px;
+    z-index: 1;
+}
+
+div.wolfImg {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+div.wolfCard {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(250, 250, 250);
+    border-width: 0 3px 3px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #2e578e;
+}
+
+div.wolfSpecs {
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-flow: wrap column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+div.wolfSpecsReversed {
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-flow: wrap column;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+div.wolfSpecsReversed > p {
+    text-align: right;
+    font-weight: 500;
+}
+
+div.wolfSpecs > p {
+    text-align: left;
+    font-weight: 500;
+}
+
+div.wolfTitle {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div.wolfTitleReversed {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+div.adoptWolf h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+div.adoptWolf p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+div.adoptWolf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button.adoptBtn {
+    width:20%;
+    height: 4.5vh;
+    background-color: #7aac3a;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.25rem;
+}
+
+button.adoptBtn.adopted {
+    background-color: #deba59;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+
+button.adoptBtn:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+div.hide {
+    display: none;
+}
+
+button.pageBtn {
+    border: none;
+    background: none;
+    height: 2vh;
+    font-size: 2vh;
+    display: inline-flex;
+}
+
+span {
+    font-size: 2vh;
+}
+
+p.description {
+    width: 70%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.darker-grotesque {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: "Darker Grotesque", sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    min-height: calc(100vh - 10vh - 30%);
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
