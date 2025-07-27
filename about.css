@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 1400px;
+}
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 340px;
+    gap: 50px;
+}
+
+.about-section h3 {
+    width: 811.5px;
+    text-align: center;
+    height: 56px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+    line-height: 100%
+}
+
+.about-section p {
+    width: 960px;
+    height: 134px;
+    text-align: center;
+    font-family: Darker Grotesque;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 15.5%;
+    color: #000;
+}
