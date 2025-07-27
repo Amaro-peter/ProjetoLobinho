@@ -17,6 +17,10 @@ header nav{
     font-size: 30px;
     font-weight: 700;
     color: #333333;
+    text-decoration: none;
+    font-family: 'Darker Grotesque', sans-serif;
+    line-height: 100%;
+    text-align: center;
 
 }
 
