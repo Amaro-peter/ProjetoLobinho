@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  
     <header>
         <nav>
             <a class="links" href="./nossosLobinhos.html">Nossos Lobinhos</a>
@@ -20,7 +21,45 @@
             <a class="links" href="./about.html">Quem somos</a>
         </nav>
     </header>
-    
+
+    <section class="adopt-container">
+        <div class="adopt-header">
+            <img class="wolf-image" src="assets/lobo1.png" />
+            
+            <div class="text-container">
+                <h2 class="wolf-title" id="wolf-title">Adote o(a) NomeDoLobo</h2>
+                <h6 id="wolf-id">ID: ID DO LOBO</h6>
+            </div>
+        </div>
+
+        <form class="adopt-form" id="adopt-form">
+            <div class="input-row">
+
+                <div class="adopt-input name-input">
+                    <label for="user-email">Seu nome:</label>
+                    <input type="text" name="user-name" id="user-name">
+                </div>
+
+                <div class="adopt-input age-input">
+                    <label for="user-email">Idade:</label>
+                    <input type="number" name="user-age" id="user-age" >
+                </div>
+
+            </div>
+
+            <div class="adopt-input">
+                <label for="user-email">E-mail:</label>
+                <input type="email" name="user-email" id="user-email">
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Adotar
+            </button>
+        </form>
+
+    </section>
+
+
     <footer class="site-footer">
         <div class="footer-div-gradient"></div>
         <div class="footer-container">
@@ -55,6 +94,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="services/adopt.js"></script>
 </body>
 
 </html>
