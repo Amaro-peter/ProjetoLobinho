@@ -18,23 +18,24 @@ main h2{
     background-image: url(./assets/backgroundSlide.png);
     background-position: center;
     background-size: 110%;
-    padding: 160px;
+    padding: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .secaoSlide a{
     color: white;
-    font-size: 70px;
+    font-size: 80px;
+    font-weight: 800;
 }
 
 .secaoSlide p{
     color: white;
-    font-weight: lighter;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 1.25rem;
     width: 40%;
 }
 
@@ -46,14 +47,15 @@ main h2{
     justify-content: center;
     align-items: center;
     height: 20.8125rem;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .secaoSobre p{
     color: #FFFFFF;
-    line-height: 20px;
+    line-height: 1.25rem;
     font-weight: 400;
-    margin: 0 220px;
+    padding: 0 13.75rem;
+    font-size: 1.25rem;
 }
 
 .secaoValores{
@@ -62,8 +64,8 @@ main h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 50px;
-    gap: 50px;
+    padding: 3.125rem 3.125rem;
+    gap: 3.125rem;
 }
 
 .cards{
@@ -71,7 +73,7 @@ main h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .cards > div{
@@ -79,12 +81,12 @@ main h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .cardsIcone {
     background-color: white;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 50%;
 
 }
@@ -95,19 +97,19 @@ main h2{
 
 .cards p{
     color: #FFFFFF;
-    line-height: 20px;
+    line-height: 1.25rem;
     font-weight: 400;
 }
 
 /* ---- ESTILIZAÇÃO DA SECAO EXEMPLOS ---- */
 .secaoExemplos{
     background-color: white;
-    padding: 50px 50px;
+    padding: 3.125rem 3.125rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 .exemploLobos{
@@ -115,52 +117,106 @@ main h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    padding-right: 10rem;
-    padding-left: 10rem;
+    gap: 6.25rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
 }
 
 .cardLobo{
+    height: 40vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    flex-flow: nowrap row;  
 }
 
 #cardLobo2{
+    display: flex;
     flex-direction: row-reverse;
 }
 
-.fotoCardLobo{
-    padding-top: 5%;
-    padding-left: 5%;
-    background-color: #2C5680;
-    border: 4px black solid;
+.sombraCardLobo {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 7.5rem;
+    min-height: 11.25rem;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 18.5%;
 }
 
-#fotoCardLobo2{
-    padding-right: 5%;
-    padding-left: 0;
+#sombraCardLobo2 {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 7.5rem;
+    min-height: 11.25rem;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 33.5%;
 }
 
+.fotoCardLobo img {
+    position: relative;
+    top: 12%;
+    right: 24.5%;
+    width: 50%;
+    height: 80%;
+    min-width: 7.5rem;
+    min-height: 11.25rem;
+    z-index: 1;
+}
 
-.descricaoLobo{
+.fotoCardLobo {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
 }
 
-#descricaoLobo2{
-    justify-content: flex-end;
+.descricaoLobo {
+    width: 40%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1.875rem;
+}
+
+#descricaoLobo2 {
+    width: 40%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.descricaoLobo p {
+    text-align: left;
+    font-weight: 500;
+}
+
+#descricaoLobo2 p {
+    text-align: right;
+    font-weight: 500;
+}
+
+.tituloLobo {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+}
+
+#tituloLobo2 {
     align-items: flex-end;
 }
-.descricaoLobo h3{
-    padding-bottom: 10px;
-}
 
-.descricaoLobo h4{
-    padding-bottom: 40px;
+.tituloLobo h4{
     font-weight: 300;
 }
