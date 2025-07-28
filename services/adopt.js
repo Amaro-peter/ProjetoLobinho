@@ -11,7 +11,7 @@ const wolf = wolvesList.find(w => w.id === wolfId);
 if (wolf && wolf.imagem) {
     imgWolf.src = wolf.imagem;
 } else {
-    imgWolf.src = localStorage.getItem("imagem");
+    imgWolf.src = "http://dummyimage.com/748x446.png/cc0000/ffffff)";
 }
 
 title.textContent = "Adote o(a) " + (wolf ? wolf.nome : localStorage.getItem("nome"));
