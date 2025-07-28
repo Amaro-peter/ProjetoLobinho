@@ -1,0 +1,136 @@
+div.wolfSpecs {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+div.adoptWolf {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.wolfText {
+    width: 40%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Darker Grotesque", sans-serif;
+    overflow: auto;
+}
+
+div.wolfText p{
+    display: flex;
+    flex-flow: wrap row;
+
+}
+
+div.wolfImg {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 100%
+}
+
+div.wolfImg img {
+    position: relative;
+    top: 12%;
+    right: 24.5%;
+    width: 50%;
+    height: 80%;
+    min-width: 120px;
+    min-height: 180px;
+    z-index: 1;
+}
+
+div.wolfButtons {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5vmax;
+
+}
+
+div.wolfButtons button {
+    height: 6vh;
+    width: 10vw;
+}
+
+div.wolfButtons button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+button.adopt {
+    border: none;
+    background-color: rgb(122,172,58);
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+button.delete {
+    border: none;
+    background-color: rgb(222,89,89);
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+div.imgShadow {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 120px;
+    min-height: 180px;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 18.5%;
+}
+
+.darker-grotesque {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: "Darker Grotesque", sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 10vh - 30.5% );
+    align-items: center;
+    flex-direction: column;
+}

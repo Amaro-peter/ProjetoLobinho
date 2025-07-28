@@ -118,7 +118,7 @@ window.addEventListener("DOMContentLoaded", function () {
         btn.onclick = () => {
           if (!wolf.adotado) {
             localStorage.setItem("selectedWolf", JSON.stringify(wolf));
-            window.location.href = "./showLobinho.html";
+            window.location.href = "./mostrarLobo.html"; // Corrigido aqui
           }
         };
       } else {
