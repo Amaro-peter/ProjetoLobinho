@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", function () {
         btn.className = "adoptBtn" + (wolf.adotado ? " adopted" : "");
         btn.innerText = wolf.adotado ? "Adotado" : "Adotar";
         btn.disabled = wolf.adotado;
-        btn.style.backgroundColor = wolf.adotado ? "#deba59" : "#7aac3a";
+        btn.style.backgroundColor = wolf.adotado ? "#7aac3a" : "#deba59";
         btn.onclick = () => {
           if (!wolf.adotado) {
             localStorage.setItem("selectedWolf", JSON.stringify(wolf));
