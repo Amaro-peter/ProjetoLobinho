@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="styleListaLobinhos.css">
     <title>Página Inicial</title>
 </head>
 
@@ -67,32 +68,42 @@
         </section>
         <section class="secaoExemplos">
             <h2>Lobos Exemplo</h2>
-            <div class="exemploLobos">
-                <div class="cardLobo" id="cardLobo1">
-                    <div class="fotoCardLobo">
-                        <div class="sombraCardLobo"></div>                       
-                        <img src="./assets/lobo1.png">
-                    </div>
-                    <div class="descricaoLobo" id="descricaoLobo1">
-                        <div class="tituloLobo">
-                            <h3>Nome do Lobo</h3>
-                            <h4>Idade: XX anos</h4>
-                        </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
-                    </div>
+            <div class="wolfCard" id="wolf0">
+                <div class="wolfImg">
+                    <div class="imgShadow"></div>
+                    <img src="../assets/lobinhoImage.png" alt="Wolf" id="image0">
                 </div>
-                <div class="cardLobo" id="cardLobo2">
-                    <div class="fotoCardLobo" id="fotoCardLobo2">
-                        <div class="sombraCardLobo" id="sombraCardLobo2"></div>     
-                        <img src="./assets/lobo2.png">
-                    </div>
-                    <div class="descricaoLobo" id="descricaoLobo2">
-                        <div class="tituloLobo" id="tituloLobo2">
-                            <h3>Nome do Lobo</h3>
-                            <h4>Idade: XX anos</h4>
+                <div class="wolfSpecs">
+                    <div class="adoptWolf">
+                        <div class="wolfTitle">
+                            <h3 id="name0">Wolf Name</h3>
+                            <p id="age0">Age: XX years</p>
                         </div>
-                        <p>Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.Não obstante, o surgimento do comércio virtual faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas.</p>
                     </div>
+                    <p id="desc0" class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptatum obcaecati quaerat accusantium corrupti totam aspernatur alias vel delectus est omnis saepe quas, et, officia ratione in a! Nostrum, molestiae.
+                        Odio debitis deserunt placeat repudiandae excepturi sint blanditiis hic laboriosam iusto maxime laudantium, accusamus sapiente molestiae, voluptatem libero ullam nobis atque cumque. Totam beatae tenetur vel recusandae laborum, at voluptatem.
+                        Ut, quisquam soluta? Praesentium minus neque non eaque veritatis nulla officiis aliquid a excepturi et ea, illo pariatur rem quod quasi fuga exercitationem consequuntur? Accusamus ipsa possimus velit quidem eius.
+                    </p>
+                </div>
+            </div>
+            <div class="wolfCard" id="wolf1">
+                <div class="wolfSpecsReversed">
+                    <div class="adoptWolf">
+                        <div class="wolfTitleReversed">
+                            <h3 id="name1">Wolf Name</h3>
+                            <p id="age1">Age: XX years</p>
+                        </div>
+                    </div>
+                    <p id="desc1" class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptatum obcaecati quaerat accusantium corrupti totam aspernatur alias vel delectus est omnis saepe quas, et, officia ratione in a! Nostrum, molestiae.
+                        Odio debitis deserunt placeat repudiandae excepturi sint blanditiis hic laboriosam iusto maxime laudantium, accusamus sapiente molestiae, voluptatem libero ullam nobis atque cumque. Totam beatae tenetur vel recusandae laborum, at voluptatem.
+                        Ut, quisquam soluta? Praesentium minus neque non eaque veritatis nulla officiis aliquid a excepturi et ea, illo pariatur rem quod quasi fuga exercitationem consequuntur? Accusamus ipsa possimus velit quidem eius.
+                    </p>
+                </div>
+                <div class="wolfImg">
+                    <div class="imgShadowReversed"></div>
+                    <img src="../assets/loboImage.png" alt="Wolf" id="image1">
                 </div>
             </div>
         </section>
@@ -132,6 +143,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./services/exemploLobo.js"></script>
 </body>
 
 </html>
