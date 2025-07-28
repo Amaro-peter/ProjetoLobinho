@@ -212,14 +212,14 @@ div.adoptWolf {
 button.adoptBtn {
     width:20%;
     height: 4.5vh;
-    background-color: #7aac3a;
+    background-color: #deba59;
     color: rgb(255, 255, 255);
     border: none;
     font-size: 1.25rem;
 }
 
 button.adoptBtn.adopted {
-    background-color: #deba59;
+    background-color: #7aac3a; 
     color: rgb(255, 255, 255);
     cursor: default;
 }
