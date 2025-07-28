@@ -161,6 +161,15 @@ main h2{
     left: 33.5%;
 }
 
+.fotoCardLobo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
 .fotoCardLobo img {
     position: relative;
     top: 12%;
@@ -170,14 +179,12 @@ main h2{
     min-width: 7.5rem;
     min-height: 11.25rem;
     z-index: 1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,86,128,0.08);
 }
 
-.fotoCardLobo {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 50%;
-}
 
 .descricaoLobo {
     width: 40%;
