@@ -30,7 +30,7 @@ header a img:hover{
 }
 
 footer{
-    width: 1400px;
+    width: 100%;
     height: 275px;
     background-color: #333333;
 }
@@ -75,6 +75,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     height: 102px;
+    align-items: flex-start;
 }
 
 .footer-contacts li {
@@ -108,14 +109,11 @@ footer{
 }
 
 .footer-about-a {
-    display: flex;
-    justify-content: center;
-    align-items: self-end;
     width: 144px;
     height: 30px;
     background-color: #DEB959;
     color: #353535;
-    font-family: Darker Grotesque, sans-serif;
+    font-family: Darker Grotesque;
     font-weight: 700;
     font-size: 25px;
     text-decoration: none;
