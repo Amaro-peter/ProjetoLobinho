@@ -4,7 +4,7 @@
 }
 
 main {
-    width: 1400px;
+    width: 100%;
 }
 
 .about-section{
@@ -37,4 +37,20 @@ main {
     line-height: 100%;
     letter-spacing: 15.5%;
     color: #000;
+}
+
+.footer-about-a {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    width: 144px;
+    height: 30px;
+    background-color: #DEB959;
+    color: #353535;
+    font-family: Darker Grotesque;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
