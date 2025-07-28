@@ -138,14 +138,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("search").addEventListener("keyup", (e) => {
     if (e.key === "Enter") {
-      nameFilter = e.target.value.trim();
+      nameFilter = e.target.value.trim().toLowerCase();
       page = 1;
       renderWolves();
     }
   });
 
   document.getElementById("addWolf").addEventListener("click", () => {
-    window.location.href = "./addLoboPage.html";
+    window.location.href = "./adicionarLobo.html";
   });
 
   renderWolves();
