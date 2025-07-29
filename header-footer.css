@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+header a {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    width: 0;
+    height: 5px;
+    background-color: #333333;
+    transition: width 0.3s ease-in-out;
+}
+
+header a:hover::after {
+    width: 66%;
+    right: 0;
+}
+
 header nav{
     display: flex;
     flex-direction: row;
@@ -28,6 +50,15 @@ header a img:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+.bar-animation {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+
+}
+
+
 
 footer{
     width: 100%;
