@@ -8,6 +8,10 @@
 }
 
 /* ---- ESTILIZAÇÃO DA MAIN ---- */
+main{
+    gap: 0;
+}
+
 main h2{
     color: #DEB959;
     font-size: 3.125rem;

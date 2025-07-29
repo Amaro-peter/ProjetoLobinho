@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-header a {
+header .links {
     position: relative;
     text-decoration: none;
     color: #333333;
 }
 
-header a::after {
+header .links::after {
     content: '';
     position: absolute;
     bottom: -7px;
@@ -20,7 +20,7 @@ header a::after {
     transition: width 0.3s ease-in-out;
 }
 
-header a:hover::after {
+header .links:hover::after {
     width: 66%;
     right: 0;
 }
